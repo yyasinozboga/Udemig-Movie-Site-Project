@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Site</title>
+    <!-- Bs Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Main Css -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Style Css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Responsive -->
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header class="header">
+      <a href="index.html" class="header-logo">LOGO</a>
+
+      <!-- Navbar Start -->
+      <nav class="navbar">
+        <ul class="nav-items">
+          <li class="nav-item active"><a href="#">Main Page</a></li>
+          <li class="nav-item"><a href="#">Movies</a></li>
+          <li class="nav-item"><a href="#">Series</a></li>
+          <li class="nav-item"><a href="#">My List</a></li>
+          <li class="nav-item"><a href="#">Popular</a></li>
+        </ul>
+      </nav>
+      <!-- Navbar End -->
+
+      <!-- Header Settings Start -->
+      <div class="header-settings">
+        <div class="header-image">
+          <img src="img/RDJ.png" alt="Profile Image" />
+        </div>
+
+        <span>My Account <i class="bi bi-caret-down-fill"></i></span>
+
+        <div class="dark-mode-container">
+          <button class="round-btn"></button>
+          <div><i class="bi bi-moon-fill"></i></div>
+          <div><i class="bi bi-sun-fill"></i></div>
+        </div>
+      </div>
+      <!-- Header Settings End -->
+
+      <!-- Res Menu Start -->
+      <button class="res-menu-btn"><i class="bi bi-list"></i></button>
+
+      <ul class="res-menu">
+        <li class="res-menu-item"><a href="#">Main Page</a></li>
+        <li class="res-menu-item"><a href="#">Movies</a></li>
+        <li class="res-menu-item"><a href="#">Series</a></li>
+        <li class="res-menu-item"><a href="#">My List</a></li>
+        <li class="res-menu-item"><a href="#">Popular</a></li>
+      </ul>
+      <!-- Res Menu End -->
+    </header>
+    <!-- Header End -->
+
+    <!-- Aside Start -->
+    <aside class="aside">
+      <button class="btn"><i class="bi bi-search"></i></button>
+      <button class="btn"><i class="bi bi-house-door-fill"></i></button>
+      <button class="btn"><i class="bi bi-people-fill"></i></button>
+      <button class="btn"><i class="bi bi-bookmarks-fill"></i></button>
+      <button class="btn"><i class="bi bi-hourglass-top"></i></button>
+      <button class="btn"><i class="bi bi-cart-fill"></i></button>
+      <button class="btn"><i class="bi bi-gear-fill"></i></button>
+    </aside>
+    <!-- Aside End -->
+
+    <!-- Main Start -->
+    <main class="main">
+      <!-- Hero Start -->
+      <section class="hero">
+        <div class="hero-box">
+          <div class="hero-image">
+            <img src="img/spiderman-title.png" alt="Spiderman Title" />
+          </div>
+
+          <p class="hero-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            deserunt, quis aliquid fuga veniam quae eligendi. Explicabo
+            perspiciatis at exercitationem eligendi nisi maiores vel culpa?
+            Distinctio sequi iure ipsum nihil laboriosam vitae ut temporibus
+            beatae, illo voluptates consequatur optio praesentium fuga quos
+            animi hic velit, minus adipisci quod assumenda debitis! Ullam quo
+            aliquid deleniti quidem reiciendis, incidunt corrupti magnam fuga?
+          </p>
+
+          <div>
+            <button><i class="fa-regular fa-circle-play"></i> Play</button>
+            <button>
+              <i class="fa-solid fa-circle-info"></i> More information
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Hero End -->
+
+      <!-- Select Start -->
+      <section>
+        <select class="select">
+          <option>Action</option>
+          <option>Sci-fi</option>
+          <option>Fantastic</option>
+          <option>Comedy</option>
+        </select>
+      </section>
+      <!-- Select End -->
+
+      <!-- Movie Start -->
+      <section class="movie-container">
+        <h1 class="movie-title">Popular</h1>
+
+        <div class="movie-wrapper">
+          <ul class="movie-list">
+            <li class="movie-list-item">
+              <div class="movie-image">
+                <img src="img/Iron Man.jpg" alt="Iron Man" />
+              </div>
+
+              <!-- Movie Info Start -->
+              <div class="movie-info">
+                <span class="movie-info-title">Iron Man</span>
+
+                <div class="movie-info-btn-group">
+                  <button class="movie-info-btn">
+                    <i class="bi bi-play-circle-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- Movie Info End -->
+            </li>
+
+            <li class="movie-list-item">
+              <div class="movie-image">
+                <img src="img/Iron Man 2.jpg" alt="Iron Man 2" />
+              </div>
+
+              <!-- Movie Info Start -->
+              <div class="movie-info">
+                <span class="movie-info-title">Iron Man 2</span>
+
+                <div class="movie-info-btn-group">
+                  <button class="movie-info-btn">
+                    <i class="bi bi-play-circle-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- Movie Info End -->
+            </li>
+
+            <li class="movie-list-item">
+              <div class="movie-image">
+                <img src="img/Iron Man 3.jpg" alt="Iron Man 3" />
+              </div>
+
+              <!-- Movie Info Start -->
+              <div class="movie-info">
+                <span class="movie-info-title">Iron Man 3</span>
+
+                <div class="movie-info-btn-group">
+                  <button class="movie-info-btn">
+                    <i class="bi bi-play-circle-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- Movie Info End -->
+            </li>
+
+            <li class="movie-list-item">
+              <div class="movie-image">
+                <img
+                  src="img/Sherlock Holmes Games of Shadow.jpg"
+                  alt="Sherlock Holmes Games of Shadow"
+                />
+              </div>
+
+              <!-- Movie Info Start -->
+              <div class="movie-info">
+                <span class="movie-info-title">Sherlock Holmes</span>
+
+                <div class="movie-info-btn-group">
+                  <button class="movie-info-btn">
+                    <i class="bi bi-play-circle-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- Movie Info End -->
+            </li>
+
+            <li class="movie-list-item">
+              <div class="movie-image">
+                <img
+                  src="img/Mission Impossible 5.jpg"
+                  alt="Mission Impossible 5"
+                />
+              </div>
+
+              <!-- Movie Info Start -->
+              <div class="movie-info">
+                <span class="movie-info-title">Mission Impossible</span>
+
+                <div class="movie-info-btn-group">
+                  <button class="movie-info-btn">
+                    <i class="bi bi-play-circle-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- Movie Info End -->
+            </li>
+
+            <li class="movie-list-item">
+              <div class="movie-image">
+                <img
+                  src="img/Pirates of the Caribbean The Curse of the Black Pearl.webp"
+                  alt="Pirates of the Caribbean The Curse of the Black Pearl"
+                />
+              </div>
+
+              <!-- Movie Info Start -->
+              <div class="movie-info">
+                <span class="movie-info-title text-sm"
+                  >Pirates of the Caribbean</span
+                >
+
+                <div class="movie-info-btn-group">
+                  <button class="movie-info-btn">
+                    <i class="bi bi-play-circle-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- Movie Info End -->
+            </li>
+          </ul>
+
+          <button class="arrow prev-btn">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+          <button class="arrow next-btn">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <section class="movie-container">
+        <h1 class="movie-title">Movies</h1>
+
+        <div class="movie-wrapper">
+          <ul class="movie-list">
+            <li class="movie-list-item">
+              <div class="movie-image">
+                <img
+                  src="img/Avengers Infinity War.jpg"
+                  alt="Avengers Infinity War"
+                />
+              </div>
+
+              <!-- Movie Info Start -->
+              <div class="movie-info">
+                <span class="movie-info-title text-md"
+                  >Avengers Infinity War</span
+                >
+
+                <div class="movie-info-btn-group">
+                  <button class="movie-info-btn">
+                    <i class="bi bi-play-circle-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- Movie Info End -->
+            </li>
+
+            <li class="movie-list-item">
+              <div class="movie-image">
+                <img
+                  src="img/Star Wars Episode III - Revenge of the Sith.jpg"
+                  alt="Star Wars Episode III - Revenge of the Sith"
+                />
+              </div>
+
+              <!-- Movie Info Start -->
+              <div class="movie-info">
+                <span class="movie-info-title">Star Wars 3</span>
+
+                <div class="movie-info-btn-group">
+                  <button class="movie-info-btn">
+                    <i class="bi bi-play-circle-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- Movie Info End -->
+            </li>
+
+            <li class="movie-list-item">
+              <div class="movie-image">
+                <img src="img/Joker.jpg" alt="Joker" />
+              </div>
+
+              <!-- Movie Info Start -->
+              <div class="movie-info">
+                <span class="movie-info-title">Joker</span>
+
+                <div class="movie-info-btn-group">
+                  <button class="movie-info-btn">
+                    <i class="bi bi-play-circle-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- Movie Info End -->
+            </li>
+
+            <li class="movie-list-item">
+              <div class="movie-image">
+                <img src="img/Avengers Endgame.jpg" alt="Avengers Endgame" />
+              </div>
+
+              <!-- Movie Info Start -->
+              <div class="movie-info">
+                <span class="movie-info-title">Avengers Endgame</span>
+
+                <div class="movie-info-btn-group">
+                  <button class="movie-info-btn">
+                    <i class="bi bi-play-circle-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- Movie Info End -->
+            </li>
+
+            <li class="movie-list-item">
+              <div class="movie-image">
+                <img src="img/The Avengers.jpg" alt="The Avengers" />
+              </div>
+
+              <!-- Movie Info Start -->
+              <div class="movie-info">
+                <span class="movie-info-title">The Avengers</span>
+
+                <div class="movie-info-btn-group">
+                  <button class="movie-info-btn">
+                    <i class="bi bi-play-circle-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- Movie Info End -->
+            </li>
+
+            <li class="movie-list-item">
+              <div class="movie-image">
+                <img src="img/Zodiac.webp" alt="Zodiac" />
+              </div>
+
+              <!-- Movie Info Start -->
+              <div class="movie-info">
+                <span class="movie-info-title">Zodiac</span>
+
+                <div class="movie-info-btn-group">
+                  <button class="movie-info-btn">
+                    <i class="bi bi-play-circle-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- Movie Info End -->
+            </li>
+          </ul>
+
+          <button class="arrow prev-btn">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+          <button class="arrow next-btn">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <section class="movie-container">
+        <h1 class="movie-title">Series</h1>
+
+        <div class="movie-wrapper">
+          <ul class="movie-list">
+            <li class="movie-list-item">
+              <div class="movie-image">
+                <img src="img/f1.jpg" alt="Spider Man" />
+              </div>
+
+              <!-- Movie Info Start -->
+              <div class="movie-info">
+                <span class="movie-info-title">Spider Man</span>
+
+                <div class="movie-info-btn-group">
+                  <button class="movie-info-btn">
+                    <i class="bi bi-play-circle-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- Movie Info End -->
+            </li>
+
+            <li class="movie-list-item">
+              <div class="movie-image">
+                <img src="img/f2.jpg" alt="Hulk" />
+              </div>
+
+              <!-- Movie Info Start -->
+              <div class="movie-info">
+                <span class="movie-info-title">Hulk</span>
+
+                <div class="movie-info-btn-group">
+                  <button class="movie-info-btn">
+                    <i class="bi bi-play-circle-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- Movie Info End -->
+            </li>
+
+            <li class="movie-list-item">
+              <div class="movie-image">
+                <img src="img/The Flash.webp" alt="The Flash" />
+              </div>
+
+              <!-- Movie Info Start -->
+              <div class="movie-info">
+                <span class="movie-info-title">The Flash</span>
+
+                <div class="movie-info-btn-group">
+                  <button class="movie-info-btn">
+                    <i class="bi bi-play-circle-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- Movie Info End -->
+            </li>
+
+            <li class="movie-list-item">
+              <div class="movie-image">
+                <img src="img/Breaking Bad.jpg" alt="Breaking Bad" />
+              </div>
+
+              <!-- Movie Info Start -->
+              <div class="movie-info">
+                <span class="movie-info-title">Breaking Bad</span>
+
+                <div class="movie-info-btn-group">
+                  <button class="movie-info-btn">
+                    <i class="bi bi-play-circle-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- Movie Info End -->
+            </li>
+
+            <li class="movie-list-item">
+              <div class="movie-image">
+                <img src="img/f7.jpg" alt="Dark" />
+              </div>
+
+              <!-- Movie Info Start -->
+              <div class="movie-info">
+                <span class="movie-info-title">Dark</span>
+
+                <div class="movie-info-btn-group">
+                  <button class="movie-info-btn">
+                    <i class="bi bi-play-circle-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- Movie Info End -->
+            </li>
+
+            <li class="movie-list-item">
+              <div class="movie-image">
+                <img src="img/f5.jpg" alt="Lord of the Rings" />
+              </div>
+
+              <!-- Movie Info Start -->
+              <div class="movie-info">
+                <span class="movie-info-title">Lord of the Rings</span>
+
+                <div class="movie-info-btn-group">
+                  <button class="movie-info-btn">
+                    <i class="bi bi-play-circle-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                  </button>
+                  <button class="movie-info-btn">
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- Movie Info End -->
+            </li>
+          </ul>
+
+          <button class="arrow prev-btn">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+          <button class="arrow next-btn">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
+      </section>
+      <!-- Movie End -->
+    </main>
+    <!-- Main End -->
+
+    <!--? JS -->
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,398 @@
+.header {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: calc(100% - 50px);
+  height: 70px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header.active {
+  background-color: white;
+}
+
+.header.active .nav-item a {
+  color: black;
+}
+
+.header.active .nav-item:hover {
+  text-shadow: 0 0 5px black;
+}
+
+.header.active .header-settings {
+  color: black;
+}
+
+.header.active .dark-mode-container {
+  background-color: black;
+}
+
+.header.active .round-btn {
+  background-color: white;
+  left: 1px;
+}
+
+.header-logo {
+  color: #e74157;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.nav-items {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item {
+  transition: all 0.3s;
+}
+
+.nav-item:hover {
+  text-shadow: 0 0 8px white;
+}
+
+.nav-item.active {
+  font-weight: 600;
+}
+
+.header-settings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  color: white;
+}
+
+.header-image {
+  width: 50px;
+  height: 50px;
+}
+
+.header-image img {
+  border-radius: 50%;
+}
+
+.dark-mode-container {
+  margin-right: 50px;
+  position: relative;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 30px;
+  padding: 3px 2px 0;
+}
+
+.dark-mode-container i {
+  font-size: 20px;
+}
+
+.round-btn {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  background-color: black;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.dark-mode-container i {
+  color: goldenrod;
+}
+
+.res-menu-btn {
+  display: none;
+  position: absolute;
+  right: 10px;
+  color: white;
+  font-size: 30px;
+  transition: all 0.3s;
+}
+
+.res-menu-btn.active {
+  color: black;
+}
+
+.res-menu-btn:hover {
+  color: #e74157;
+}
+
+.res-menu {
+  display: none;
+  position: absolute;
+  top: -300px;
+  left: 0px;
+  background-color: black;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.res-menu.show {
+  top: 69px;
+}
+
+.res-menu.active {
+  background-color: white;
+}
+
+.res-menu.active .res-menu-item:hover a {
+  color: white;
+}
+
+.res-menu.active .res-menu-item a {
+  color: black;
+}
+
+.res-menu-item {
+  padding: 10px;
+}
+
+.res-menu-item:hover {
+  background-color: #e74157;
+}
+
+.res-menu-item a {
+  font-size: 20px;
+}
+
+.aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 50px;
+  background-color: black;
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.aside.active {
+  background-color: white;
+}
+
+.aside.active .btn {
+  color: black;
+}
+
+.aside .btn {
+  color: white;
+  transition: all 0.3s;
+}
+
+.aside .btn:hover {
+  color: #e74157;
+}
+
+.main {
+  position: absolute;
+  right: 0;
+  width: calc(100% - 50px);
+  background-color: black;
+}
+
+.main.active {
+  background-color: white;
+}
+
+.hero {
+  position: relative;
+  margin-top: 70px;
+  background-image: url("../img/spiderman.jpg");
+  background-repeat: no-repeat;
+  height: calc(100vh - 70px);
+  background-size: 100% 100%;
+}
+
+.hero-box {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}
+
+.hero-image {
+  width: 25%;
+}
+
+.hero-content {
+  width: 30%;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+}
+
+.hero button {
+  padding: 10px 30px;
+  margin-top: 30px;
+}
+
+.hero button:nth-child(1) {
+  background-color: white;
+  margin-right: 20px;
+}
+
+.hero button:nth-child(2) {
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.select {
+  margin-top: 50px;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  width: 200px;
+  font-size: 18px;
+  outline: none;
+  padding: 10px 0;
+}
+
+.select.active {
+  border-color: black;
+  background-color: white;
+  color: black;
+}
+
+.movie-container {
+  margin: 30px 0;
+  padding: 0 50px 0 0;
+  height: 300px;
+}
+
+.movie-title {
+  color: white;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.movie-title.active {
+  color: black;
+}
+
+.movie-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 50px;
+  overflow: scroll;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+.movie-list::-webkit-scrollbar {
+  display: none;
+}
+
+.movie-list-item {
+  position: relative;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+.text-md {
+  font-size: 20px !important;
+}
+
+.text-sm {
+  font-size: 13px !important;
+}
+
+.movie-list-item:hover {
+  margin-left: 30px;
+  transform: scale(1.2);
+}
+
+.movie-list-item:hover .movie-image {
+  opacity: 0.5;
+}
+
+.movie-list-item:hover .movie-info {
+  opacity: 1;
+}
+
+.movie-image {
+  width: 300px;
+  height: 200px;
+}
+
+.movie-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.movie-info-title {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  white-space: nowrap;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.movie-info-btn-group {
+  margin: auto;
+  width: 180px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.movie-info-btn {
+  color: white;
+  font-size: 25px;
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+
+.movie-info-btn:hover {
+  opacity: 1;
+}
+
+.movie-wrapper {
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  top: 25%;
+  color: white;
+  font-size: 100px;
+  height: 95px;
+  overflow: hidden;
+  opacity: 0.5;
+  transition: all 0.5s ease;
+}
+
+.arrow.active {
+  color: black;
+}
+
+.arrow:hover {
+  opacity: 1;
+}
+
+.next-btn {
+  right: 20px;
+}
+
+.prev-btn {
+  left: 20px;
+}
