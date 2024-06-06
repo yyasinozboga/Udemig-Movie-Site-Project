@@ -14,4 +14,6 @@ HTML5 CSS3 JS
 - **Open and close menu**
 - **Available slider**
 
+## Preview
+
 <img src="img/Movie Site 2 Gif.gif">
