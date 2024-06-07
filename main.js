@@ -13,15 +13,21 @@ if (imageCount < 1) {
 }
 
 nextBtn.forEach((btn, i) => {
+  movieList[i].setAttribute("data-count", 0); // Başlangıçta data-count değerini sıfırla
+
   btn.addEventListener("click", () => {
+    let count = parseInt(movieList[i].getAttribute("data-count")) || 0;
     count++;
+    console.log("Next count:", count);
+
+    movieList[i].setAttribute("data-count", count);
     movieList[i].scrollLeft += imageWidth;
 
     const prev = btn.previousElementSibling;
 
     if (imageCount + count >= images) {
       btn.style.display = "none";
-      movieList[i].scrollLeft = images * imageWidth;
+      movieList[i].scrollLeft = (images - imageCount) * imageWidth;
     } else {
       btn.style.display = "block";
     }
@@ -31,9 +37,15 @@ nextBtn.forEach((btn, i) => {
 });
 
 prevBtn.forEach((btn, i) => {
+  movieList[i].setAttribute("data-count", 0); // Başlangıçta data-count değerini sıfırla
   btn.style.display = "none";
+
   btn.addEventListener("click", () => {
+    let count = parseInt(movieList[i].getAttribute("data-count")) || 0;
     count--;
+    console.log("Prev count:", count);
+
+    movieList[i].setAttribute("data-count", count);
     movieList[i].scrollLeft -= imageWidth;
 
     const next = btn.nextElementSibling;
