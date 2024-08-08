@@ -1,6 +1,8 @@
-# Movie-Site-2
+# Udemig Movie Site Project
 
-This Movie Site was created by Yasin Özboğa
+This Movie Site was created by Yasin Özboğa.
+HTML5, CSS3 and JavaScript were used perfectly in this project to be compatible with users.
+Toggle menu, sliders and icons were used for increase experience users.
 
 ## Used Technologies
 
